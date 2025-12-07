@@ -1,0 +1,154 @@
+:root {
+    --violet-light: #f3e9ff;
+    --violet: #9b5de5;
+    --violet-dark: #6a3fc7;
+    --text-dark: #2e2e3a;
+    --text-light: #72727e;
+    --white: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.12);
+}
+
+/* Smooth fade animation */
+@keyframes fadeUp {
+    from {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Profile Page Layout */
+.profilePage {
+    margin-top: 15vh;
+    display: flex;
+    animation: fadeUp 0.5s ease-in-out;
+}
+
+/* Profile Sidebar Card */
+.profileCard {
+    width: 21%;
+    margin: 5vh 2%;
+    padding: 2vh 1.5vw;
+    background-color: var(--violet-light);
+    border: 1px solid #ead8ff;
+    border-radius: 0.8rem;
+    transition: 0.3s ease;
+}
+
+.profileCard:hover {
+    box-shadow: 0px 8px 25px var(--shadow);
+    transform: translateY(-3px);
+}
+
+.profileCard span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.profileCard span h5 {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--violet-dark);
+    font-weight: 600;
+}
+
+.profileCard span p {
+    margin: 0;
+    color: var(--text-light);
+}
+
+/* Orders Container */
+.profileOrders-container {
+    width: 75%;
+}
+
+.profileOrders-container h3 {
+    font-size: 1.6rem;
+    margin: 2vh 3vw;
+    color: var(--violet-dark);
+    font-weight: 600;
+    animation: fadeUp 0.6s ease-in-out;
+}
+
+.profileOrders {
+    height: 70vh;
+    margin: 2vh 2vw;
+    padding: 2vh 1.5vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Individual Order Box */
+.profileOrder {
+    display: flex;
+    gap: 30px;
+    background-color: var(--white);
+    padding: 3vh;
+    border: 1px solid #e7d8ff;
+    border-radius: 0.9rem;
+    transition: 0.3s ease;
+    animation: fadeUp 0.5s ease-in-out;
+}
+
+.profileOrder:hover {
+    box-shadow: 0px 8px 25px var(--shadow);
+    transform: translateY(-4px);
+}
+
+.profileOrder img {
+    height: 30vh;
+    width: 17vw;
+    border-radius: 0.4rem;
+    object-fit: cover;
+}
+
+/* Order Text */
+.profileOrder-data {
+    width: 60%;
+}
+
+.profileOrder-data h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--violet-dark);
+    font-weight: 600;
+}
+
+.profileOrder-data p {
+    margin: 0;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: var(--text-light);
+}
+
+.profileOrder-data div {
+    display: flex;
+    gap: 25px;
+}
+
+.profileOrder-data div span p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.profileOrder-data div span p b {
+    color: var(--violet);
+}
+
+.profileOrder-data div span h5 {
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.profileOrder-data div span h5 b {
+    color: var(--violet-dark);
+}

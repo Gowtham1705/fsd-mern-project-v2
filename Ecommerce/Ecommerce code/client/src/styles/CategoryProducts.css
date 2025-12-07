@@ -1,0 +1,49 @@
+.categoryProducts-page{
+    margin-top: 15vh;
+    animation: fadeUp 0.9s ease-in-out;
+}
+
+/* Page Title */
+.categoryProducts-page h2{
+    margin: 3vh 2vw;
+    color: #4b42d6;     /* violet theme heading */
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Small underline animation for heading */
+.categoryProducts-page h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 60px;
+    height: 4px;
+    background: #6b5bff;
+    border-radius: 10px;
+    animation: slideIn 1.2s ease;
+}
+
+/* Animations */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { width: 0; }
+    to { width: 60px; }
+}

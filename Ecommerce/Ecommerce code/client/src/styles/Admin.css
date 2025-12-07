@@ -1,0 +1,101 @@
+.admin-page{
+    background: linear-gradient(135deg, #5c49e9, #9786ff);
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Admin Cards */
+.admin-home-card{
+    color: #f0f0ff;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.12);
+    width: 70%;
+    margin-left: 15%;
+    padding: 4vh 0;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: 0.3s ease;
+}
+
+/* Hover lift + glow */
+.admin-home-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0px 14px 35px rgba(0,0,0,0.28);
+}
+
+/* Buttons inside card */
+.admin-home-card button{
+    border: 1.5px solid #ffb14a;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffb14a;
+    padding: 7px 25px;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* Button hover */
+.admin-home-card button:hover{
+    background-color: #ff9800;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Banner input section */
+.admin-banner-input{
+    width: 42vw;
+    padding: 4vh 3vw;
+    animation: fadeIn 1s ease;
+}
+
+.admin-banner-input h5{
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: .3px;
+}
+
+/* Input styling */
+.admin-banner-input input{
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 0.5rem;
+    
+    transition: 0.3s ease;
+}
+
+/* Input focus */
+.admin-banner-input input:focus{
+    background: rgba(255, 255, 255, 0.25);
+    outline: none;
+}
+
+/* Submit button */
+.admin-banner-input button{
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: #ffb14a;
+    border: none;
+    color: black;
+    font-weight: 600;
+    border-radius: .5rem;
+    transition: 0.3s ease;
+}
+
+/* Hover animation */
+.admin-banner-input button:hover{
+    background-color: #ff9900;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}

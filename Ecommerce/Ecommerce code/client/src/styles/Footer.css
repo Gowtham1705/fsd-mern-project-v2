@@ -1,0 +1,71 @@
+/* Footer Main */
+.Footer{
+    background: linear-gradient(135deg, #4d3bcf, #2b1c81);
+    color: aliceblue;
+    padding: 4vh 3vw;
+    margin-top: 5vh;
+    border-radius: 0.6rem 0.6rem 0 0;
+    box-shadow: 0 -4px 15px rgba(135, 113, 255, 0.25);
+    animation: fadeUp 0.9s ease-in-out;
+}
+
+/* Footer Title */
+.Footer h4{
+    margin-left: 2vw;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Footer Body */
+.footer-body{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10vw;
+    margin-bottom: 3vh;
+    margin-top: 4vh;
+}
+
+/* Footer Links */
+.footer-body ul li{
+    list-style: none;
+    color: #d8d7ff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Glow Effect */
+.footer-body ul li:hover{
+    color: #ffffff;
+    transform: translateX(6px);
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+}
+
+/* Footer Bottom */
+.footer-bottom p{
+    text-align: center;
+    color: #e0defc;
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+/* Animations */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,113 @@
+.new-product-page{
+    background: linear-gradient(135deg, #4b2c8a, #6d44c5);
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 4vh;
+
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.new-product-container{
+    background-color: white;
+    padding: 3vh 2vw;
+    width: 54vw;
+    margin-left: 25vw;
+    border-radius: 0.8rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+    animation: slideUp 0.8s ease;
+}
+
+.new-product-container h3{
+    text-align: center;
+    color: #4b2c8a;
+    margin-bottom: 3vh;
+    letter-spacing: 1px;
+}
+
+.new-product-container button{
+    width: 50%;
+    margin-left: 25%;
+    background-color: #5a2dbf;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.new-product-container button:hover{
+    background-color: #6d44c5;
+    transform: scale(1.05);
+}
+
+.new-product-body{
+    height: 60vh;
+    overflow-y: scroll;
+    padding: 2vh 1.5vw;
+    margin-bottom: 2vh;
+}
+
+/* Scrollbar Stylish */
+.new-product-body::-webkit-scrollbar{
+    width: 8px;
+}
+.new-product-body::-webkit-scrollbar-thumb{
+    background: #6d44c5;
+    border-radius: 10px;
+}
+
+.new-product-body label{
+    color: #4b2c8a;
+    font-weight: 500;
+}
+
+.new-product-body input, 
+.new-product-body select{
+    background-color: #f1eaff;
+    border: 1px solid #c8b6ff;
+    color: #3a246b;
+    padding: 7px 8px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.new-product-body input:focus,
+.new-product-body select:focus{
+    outline: none;
+    border-color: #6d44c5;
+    background-color: #eee5ff;
+    transform: scale(1.02);
+}
+
+.new-product-body section h4{
+    color: #4b2c8a;
+}
+
+.new-product-body section span label{
+    color: #6d44c5;
+}
+
+/* INPUT GROUP WIDTHS */
+.new-product-body span .span-21 input{
+    width: 20vw;
+}
+.new-product-body span .span-22 input{
+    width: 25vw;
+}
+.new-product-body span .span-3 input,
+.new-product-body span .span-3 select{
+    width: 14.7vw;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}

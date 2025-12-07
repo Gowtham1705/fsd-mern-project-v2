@@ -1,0 +1,219 @@
+.AuthenticatePage{
+    width: 100%;
+    height: 100vh;
+    padding-top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authForm{
+    /* margin-top: 5%; */
+    /* border: 1px solid #cb7c7c; */
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;/* ---------------- AUTH PAGE ---------------- */
+
+.AuthenticatePage{
+    width: 100%;
+    height: 100vh;
+    padding-top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeBg 1.2s ease-in-out;
+}
+
+/* AUTH FORM BOX */
+.authForm{
+    padding: 25px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.25);
+    
+    box-shadow: 0px 8px 30px rgba(80, 74, 236, 0.25);
+    border-radius: 0.8rem;
+
+    animation: slideUp 0.8s ease-out;
+}
+
+/* TITLE */
+.authForm h2{
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #504aec;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* INPUT WRAPPER */
+.authFormInputs {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* LABEL */
+.authFormInputs label{
+    color: #4f4abf;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* INPUT BOX */
+.authFormInputs input{
+    color: #3f3c9e;
+    border: none;
+    outline: none;
+    background-color: rgba(231, 235, 235, 0.0);
+    border: 1px solid #bcbafd;
+    padding: 10px;
+    width: 100%;
+    height: 45px;
+    border-radius: 0.4rem;
+    transition: 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.authFormInputs input:focus{
+    border-color: #504aec;
+    box-shadow: 0px 0px 8px rgba(80, 74, 236, 0.4);
+}
+
+/* SELECT FIELD */
+.authForm select {
+    color: #3f3c9e;
+    border: 1px solid #bcbafd;
+    outline: none;
+    background-color: rgba(231, 235, 235, 0.0);
+    padding: 12px 10px;
+    width: 100%;
+    height: 45px;
+    border-radius: 0.4rem;
+    transition: 0.3s ease;
+}
+
+.authForm select:focus{
+    border-color: #504aec;
+    box-shadow: 0px 0px 8px rgba(80, 74, 236, 0.4);
+}
+
+/* BUTTON */
+.authForm button{
+    background-color: #504aec;
+    font-weight: 600;
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 0.4rem;
+    margin-top: 10px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.authForm button:hover{
+    background-color: #6c66ff;
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(80, 74, 236, 0.25);
+}
+
+/* SMALL TEXT */
+.authForm p{
+    margin-top: 5%;
+    color: #2f2f3b;
+    font-size: 0.9rem;
+}
+
+.authForm p span{
+    color: #4d48e0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.authForm p span:hover{
+    text-decoration: underline;
+}
+
+/* ---------------- ANIMATIONS ---------------- */
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeBg {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+    height: max-content;
+    font-family: 'Work Sans', sans-serif;
+
+    background-color: rgba(255, 255, 255, 0.263);
+    
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 0.5rem;
+
+}
+.authForm h2{
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 79, 135);
+    font-size: 1.8rem;
+}
+.authFormInputs {
+    width: 100%;
+    height: 50px;
+}
+
+.authFormInputs label{
+    color: rgb(0, 61, 101);
+    /* padding: 0; */
+}
+.authFormInputs input{
+    color: rgb(0, 61, 101);
+    border: none;
+    outline: none;
+    background-color: rgba(231, 235, 235, 0);
+    border: 1px solid #9dc1d975;
+    /* padding: 0; */
+}
+.authForm select {
+    color: rgb(0, 61, 101);
+    border: none;
+    outline: none;
+    background-color: rgba(231, 235, 235, 0);
+    border: 1px solid #9dc1d975;
+    font-size: medium;
+    padding: 15px 10px;
+}
+.authFormInputs input #floatingInput .form-control{
+    padding: 0 !important;
+}
+
+.authForm button{
+    background-color: rgb(0, 108, 197);
+    font-weight: bold;
+    color: rgb(246, 251, 255);
+    height: 50px;
+}
+.authForm p{
+    margin-top: 5%;
+    color: black;
+}
+.authForm p span{
+    margin-top: 5%;
+    color: rgb(0, 68, 107);
+    cursor: pointer;
+}

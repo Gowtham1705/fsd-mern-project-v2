@@ -1,0 +1,19 @@
+/* Paste here at the very top */
+.page-container {
+    background: linear-gradient(135deg, #5c49e9, #9786ff);
+    color: aliceblue;
+    transition: all 0.3s ease;
+}
+
+.card, .profileCard, .product, .cartContents, .all-product, .admin-home-card {
+    background: rgba(255, 255, 255, 0.05);
+    
+    border-radius: 0.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .profileCard:hover, .product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 14px 35px rgba(0,0,0,0.28);
+}

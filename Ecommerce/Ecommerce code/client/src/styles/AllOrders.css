@@ -1,0 +1,153 @@
+.all-orders-page{
+    background: linear-gradient(135deg, #5c49e9, #9786ff);
+    height: 100vh;
+    width: 100%;
+    padding: 15vh 3vw 3vh 3vw;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+.all-orders-page h3{
+    font-size: 1.7rem;
+    margin: 2vh 3vw;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+/* Orders list scroll area */
+.all-orders{
+    height: 70vh;
+    margin: 2vh 2vw;
+    padding: 2vh 1.5vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Each order card */
+.all-orders-order{
+    display: flex;
+    gap: 30px;
+    padding: 3vh;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.all-orders-order:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 15px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Product image */
+.all-orders-order img{
+    height: 35vh;
+    width: 17vw;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+/* Order Details */
+.all-orders-order-data{
+    width: 95%;
+    color: #f5f1ff;
+}
+
+/* Title */
+.all-orders-order-data h4{
+    font-size: 1.2rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Description text */
+.all-orders-order-data p{
+    margin: 0 0 6px 0;
+    font-size: 0.85rem;
+    color: #e1e1f7;
+}
+
+/* Detail row */
+.all-orders-order-data div{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Small info blocks */
+.all-orders-order-data div span{
+    display: flex;
+    flex-direction: column;
+}
+
+.all-orders-order-data div span p{
+    font-size: 0.9rem;
+    color: #e7e4ff;
+}
+
+.all-orders-order-data div span p b{
+    color: #d0caff;
+}
+
+/* Pricing / status text */
+.all-orders-order-data div span h5{
+    font-size: 1rem;
+    color: #efe9ff;
+    margin-bottom: 20px;
+}
+
+.all-orders-order-data div span h5 b{
+    color: #ffffff;
+}
+
+/* Select Box */
+.all-orders-order-data div select{
+    height: 38px;
+    max-width: 250px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border-radius: 0.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    outline: none;
+    
+    transition: 0.3s;
+}
+
+/* Select Hover */
+.all-orders-order-data div select:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
+.all-orders-order-data div button{
+    height: 38px;
+    padding: 0px 22px;
+    margin-right: 20px;
+    border-radius: 0.4rem;
+    background: #ffb14a;
+    border: none;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.all-orders-order-data div button:hover{
+    background: #ff9900;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
